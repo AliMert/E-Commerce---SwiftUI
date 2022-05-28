@@ -15,6 +15,10 @@
 		E1F58BB4284267C100EA6CAB /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1F58BB1284267C100EA6CAB /* Raleway-Regular.ttf */; };
 		E1F58BB5284267C100EA6CAB /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1F58BB2284267C100EA6CAB /* Raleway-SemiBold.ttf */; };
 		E1F58BB928426B4700EA6CAB /* Raleway.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F58BB828426B4700EA6CAB /* Raleway.swift */; };
+		E1F58BC228426C7700EA6CAB /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F58BBC28426C7700EA6CAB /* View+Extensions.swift */; };
+		E1F58BC328426C7700EA6CAB /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F58BBE28426C7700EA6CAB /* RoundedCorner.swift */; };
+		E1F58BC428426C7700EA6CAB /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F58BBF28426C7700EA6CAB /* DynamicFilteredView.swift */; };
+		E1F58BC528426C7700EA6CAB /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F58BC128426C7700EA6CAB /* Delete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		E1F58BB2284267C100EA6CAB /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		E1F58BB62842680800EA6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1F58BB828426B4700EA6CAB /* Raleway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raleway.swift; sourceTree = "<group>"; };
+		E1F58BBC28426C7700EA6CAB /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E1F58BBE28426C7700EA6CAB /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		E1F58BBF28426C7700EA6CAB /* DynamicFilteredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		E1F58BC128426C7700EA6CAB /* Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		E1F58B9E2842674500EA6CAB /* E-Commerce */ = {
 			isa = PBXGroup;
 			children = (
+				E1F58BBA28426C7700EA6CAB /* Common */,
 				E1F58BAE2842679300EA6CAB /* App */,
 				E1F58BAD2842678700EA6CAB /* Resources */,
 				E1F58BA52842674700EA6CAB /* Preview Content */,
@@ -111,6 +120,41 @@
 				E1F58BB828426B4700EA6CAB /* Raleway.swift */,
 			);
 			path = Raleway;
+			sourceTree = "<group>";
+		};
+		E1F58BBA28426C7700EA6CAB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E1F58BBB28426C7700EA6CAB /* Extensions */,
+				E1F58BBD28426C7700EA6CAB /* Views */,
+				E1F58BC028426C7700EA6CAB /* ViewModifiers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E1F58BBB28426C7700EA6CAB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1F58BBC28426C7700EA6CAB /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E1F58BBD28426C7700EA6CAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1F58BBE28426C7700EA6CAB /* RoundedCorner.swift */,
+				E1F58BBF28426C7700EA6CAB /* DynamicFilteredView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1F58BC028426C7700EA6CAB /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				E1F58BC128426C7700EA6CAB /* Delete.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +232,11 @@
 			files = (
 				E1F58BA22842674500EA6CAB /* ContentView.swift in Sources */,
 				E1F58BB928426B4700EA6CAB /* Raleway.swift in Sources */,
+				E1F58BC328426C7700EA6CAB /* RoundedCorner.swift in Sources */,
+				E1F58BC428426C7700EA6CAB /* DynamicFilteredView.swift in Sources */,
+				E1F58BC228426C7700EA6CAB /* View+Extensions.swift in Sources */,
 				E1F58BA02842674500EA6CAB /* E_CommerceApp.swift in Sources */,
+				E1F58BC528426C7700EA6CAB /* Delete.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
