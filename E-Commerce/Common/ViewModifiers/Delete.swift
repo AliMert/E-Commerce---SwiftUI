@@ -107,3 +107,12 @@ public struct Delete: ViewModifier {
         generator.impactOccurred()
     }
 }
+
+//MARK: - Swipe right to Delete an Item
+
+public extension View {
+
+    func onDelete(style: Delete.CornerRadiusStyle? = nil, perform action: @escaping () -> Void) -> some View {
+        self.modifier(Delete(action: action,  cornerRadiusStyle: style))
+    }
+}

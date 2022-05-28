@@ -47,33 +47,20 @@ public extension View {
     }
 
     // MARK: Max Width
-    func maxWidth() -> some View {
+    func maxWidth(_ maxWidth: CGFloat = .infinity, alignment: Alignment = .center) -> some View {
         self
-            .frame(maxWidth: . infinity)
+            .frame(maxWidth: maxWidth, alignment: alignment)
     }
 
     // MARK: Max Height
-    func maxHeight() -> some View {
+    func maxHeight(alignment: Alignment = .center) -> some View {
         self
-            .frame(maxHeight: . infinity)
-    }
-}
-
-//MARK: - add corner radius to desired corners
-
-public extension View {
-
-    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner = .allCorners) -> some View {
-        clipShape(RoundedCorner(radius: radius, corners: corners))
-    }
-}
-
-//MARK: - Swipe right to Delete an Item
-
-public extension View {
-
-    func onDelete(style: Delete.CornerRadiusStyle? = nil, perform action: @escaping () -> Void) -> some View {
-        self.modifier(Delete(action: action,  cornerRadiusStyle: style))
+            .frame(maxHeight: . infinity, alignment: alignment)
     }
 
+    // MARK: Max Width and Height
+    func maxWidthAndHeight(alignment: Alignment = .center) -> some View {
+        self
+            .frame(maxWidth: . infinity, maxHeight: . infinity, alignment: alignment)
+    }
 }

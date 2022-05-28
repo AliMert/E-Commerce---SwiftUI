@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct DynamicFilteredView<Content: View, EContent: View, T>: View where T: NSManagedObject {
+public struct DynamicFilteredView<Content: View, EContent: View, T>: View where T: NSManagedObject {
     // MARK: Core Data Request
     @FetchRequest private var request: FetchedResults<T>
     private let content: (T)->Content
@@ -46,7 +46,7 @@ struct DynamicFilteredView<Content: View, EContent: View, T>: View where T: NSMa
         self.emptyView = emptyView
     }
     
-    var body: some View {
+    public var body: some View {
         Group{
             if request.isEmpty {
                 if let emptyView = emptyView {
