@@ -26,7 +26,7 @@
 		E1F58BB0284267C000EA6CAB /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		E1F58BB1284267C100EA6CAB /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		E1F58BB2284267C100EA6CAB /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
-		E1F58BB62842680800EA6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E1F58BB62842680800EA6CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1F58BB828426B4700EA6CAB /* Raleway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raleway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,7 +60,6 @@
 		E1F58B9E2842674500EA6CAB /* E-Commerce */ = {
 			isa = PBXGroup;
 			children = (
-				E1F58BB62842680800EA6CAB /* Info.plist */,
 				E1F58BAE2842679300EA6CAB /* App */,
 				E1F58BAD2842678700EA6CAB /* Resources */,
 				E1F58BA52842674700EA6CAB /* Preview Content */,
@@ -79,6 +78,7 @@
 		E1F58BAD2842678700EA6CAB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1F58BB62842680800EA6CAB /* Info.plist */,
 				E1F58BAF284267A400EA6CAB /* Fonts */,
 				E1F58BA32842674700EA6CAB /* Assets.xcassets */,
 			);
@@ -320,7 +320,7 @@
 				DEVELOPMENT_TEAM = R38K25C8UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "E-Commerce/Info.plist";
+				INFOPLIST_FILE = "E-Commerce/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -350,7 +350,7 @@
 				DEVELOPMENT_TEAM = R38K25C8UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "E-Commerce/Info.plist";
+				INFOPLIST_FILE = "E-Commerce/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
