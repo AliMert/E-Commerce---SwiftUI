@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        Text("Find your\nGadgets!")
-            .font(.custom(Raleway.regular, size: 55))
-            .padding()
+        OnBoardingView()
     }
 }
 

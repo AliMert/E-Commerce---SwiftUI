@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OnBoardingView: View {
+
+    @State private var showLogin: Bool = false
+
     var body: some View {
         VStack(alignment: .leading) {
             Spacer()
@@ -25,7 +28,9 @@ struct OnBoardingView: View {
             Spacer()
 
             Button {
-
+                withAnimation {
+                    self.showLogin.toggle()
+                }
             } label: {
                 Text("Get Started")
                     .font(.custom(Raleway.semibold, size: 18))
@@ -42,15 +47,19 @@ struct OnBoardingView: View {
         .padding(.vertical, 10)
         .maxWidthAndHeight()
         .background(Color("Purple"))
+        .overlay {
+            Group {
+                if showLogin {
+                    LoginView()
+                        .transition(.move(edge: .bottom))
+                }
+            }
+        }
     }
 }
 
 struct OnBoardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnBoardingView()
-            .previewDevice("iPhone 13 Pro")
-
-        OnBoardingView()
-            .previewDevice("iPhone 8")
     }
 }

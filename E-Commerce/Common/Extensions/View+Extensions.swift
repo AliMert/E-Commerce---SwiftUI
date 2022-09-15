@@ -47,9 +47,9 @@ public extension View {
     }
 
     // MARK: Max Width
-    func maxWidth(_ maxWidth: CGFloat = .infinity, alignment: Alignment = .center) -> some View {
+    func maxWidth(_ value: CGFloat = .infinity, alignment: Alignment = .center) -> some View {
         self
-            .frame(maxWidth: maxWidth, alignment: alignment)
+            .frame(maxWidth: value, alignment: alignment)
     }
 
     // MARK: Max Height
